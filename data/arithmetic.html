@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<title>MBz</title>
+			<link rel="stylesheet" type="text/css" href="../css/style2.css" />	
+		
+	</head>
+	<body>
+		<div class="main">
+			<a class="con" href="../index.html"><div>CONVERT</div></a>
+			<a class="con" href="arithmetic.html"><div>ARITHMETIC</div></a>
+			<p style="color:red;"><b>First Number In : </b> </p>
+			<form>
+				<input class="ip" id="bin" type="radio" name="input" value="bin" onclick="" /> Binary&nbsp;
+				<input class="ip" id="dec" type="radio" name="input" value="dec" onclick="" /> Decimal&nbsp;<br/>
+				<input class="ip" id="hex" type="radio" name="input" value="hex" onclick="" /> Hexa-decimal&nbsp;
+				<input class="ip" id="oct" type="radio" name="input" value="oct" onclick="" /> Octal<br/>
+			</form>
+			<p style="color:red;"><b>Second Number In : </b></p>
+			<form>
+				<input class="ip" id="opbin" type="radio" name="input" value="bin" onclick=""/> Binary&nbsp;
+				<input class="ip" id="opdec" type="radio" name="input" value="dec" onclick=""/> Decimal&nbsp;<br/>
+				<input class="ip" id="ophex" type="radio" name="input" value="hex" onclick=""/> Hexa-decimal&nbsp;
+				<input class="ip" id="opoct" type="radio" name="input" value="oct" onclick=""/> Octal<br/>
+			</form>
+			<p style="color:red;"><b>Output In : </b></p>
+			<form>
+				<input class="ip" id="fbin" type="radio" name="input" value="bin" /> Binary&nbsp;
+				<input class="ip" id="fdec" type="radio" name="input" value="dec" /> Decimal&nbsp;<br/>
+				<input class="ip" id="fhex" type="radio" name="input" value="hex" /> Hexa-decimal&nbsp;
+				<input class="ip" id="foct" type="radio" name="input" value="oct" /> Octal<br/>
+			</form>
+			<p style="color:red;"><b>Operation : </b></p>
+			<form>
+				<input class="ip" id="add" type="radio" name="input" value="Add" /> Add&nbsp;
+				<input class="ip" id="sub" type="radio" name="input" value="Subtract" /> Subtract&nbsp;<br/>
+				<input class="ip" id="mul" type="radio" name="input" value="Multiply" /> Multiply&nbsp;
+				<input class="ip" id="div" type="radio" name="input" value="Divide" /> Divide&nbsp;
+			</form>
+			<form id="format">
+			First number : <input class="box" id="box1" type="text" placeholder="First Number" onclick=""/><br/>
+			Second number : <input class="box" id="box2" type="text" placeholder="Second Number" />
+			</form>
+				<div class="ans" >
+					Ans = <p id="ans"></p>
+				</div><br />
+			<form>
+				<input type="button" class="clear" value="Submit" onclick="process();" />
+				<input type="button" class="clear" value="Clear" onclick="clr();" />
+			</form>
+			
+		</div>
+		<script src="../js/myjs2.js">
+			
+		</script>
+	</body>
+</html>
