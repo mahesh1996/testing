@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<title>MBz</title>
+			<link rel="stylesheet" type="text/css" href="css/style.css" />	
+		<style>
+			
+		</style>
+	</head>
+	
+	<body onload="setr();disbutton();">
+		<div class="main">
+			<a class="con" href="index.html"><div>CONVERT</div></a>
+			<a class="con" href="data/arithmetic.html"><div>ARITHMETIC</div></a>
+			<p style="color:red;"><b>Input in :</b> </p>
+			<form>
+				<input class="ip" id="bin" type="radio" name="input" value="bin" onclick="setr();dis();disbutton();" /> Binary&nbsp;
+				<input class="ip" id="dec" type="radio" name="input" value="dec" onclick="setr();dis();disbutton();" /> Decimal&nbsp;<br/>
+				<input class="ip" id="hex" type="radio" name="input" value="hex" onclick="setr();dis();disbutton();" /> Hexa-decimal&nbsp;
+				<input class="ip" id="oct" type="radio" name="input" value="oct" onclick="setr();dis();disbutton();" /> Octal<br/>
+			</form>
+			<p style="color:red;"><b>Output in : </b></p>
+			<form>
+				<input class="ip" id="opbin" type="radio" name="input" value="bin" /> Binary&nbsp;
+				<input class="ip" id="opdec" type="radio" name="input" value="dec" /> Decimal&nbsp;<br/>
+				<input class="ip" id="ophex" type="radio" name="input" value="hex" /> Hexa-decimal&nbsp;
+				<input class="ip" id="opoct" type="radio" name="input" value="oct" /> Octal<br/><br/>
+			</form>
+			<input class="box" id="box" type="text" placeholder="Enter Here" onclick="setr();disbutton();"/><br/><br/>
+			<input type="button" id="b1" value="1" onclick="btn1();"/>
+			<input type="button" id="b2" value="2" onclick="btn2();" />
+			<input type="button" id="b3" value="3" onclick="btn3();" />
+			<input type="button" id="b4" value="4" onclick="btn4();" /><br/><br/>
+			<input type="button" id="b5" value="5" onclick="btn5();" />
+			<input type="button" id="b6" value="6" onclick="btn6();" />
+			<input type="button" id="b7" value="7" onclick="btn7();" />
+			<input type="button" id="b8" value="8" onclick="btn8();" /><br/><br/>
+			<input type="button" id="b9" value="9" onclick="btn9();" />
+			<input type="button" id="b0" value="0" onclick="btn0();" />
+			<input type="button" id="ba" value="a" onclick="btna();" />
+			<input type="button" id="bb" value="b" onclick="btnb();" /><br/><br/>
+			<input type="button" id="bc" value="c" onclick="btnc();" />
+			<input type="button" id="bd" value="d" onclick="btnd();" />
+			<input type="button" id="be" value="e" onclick="btne();" />
+			<input type="button" id="bf" value="f" onclick="btnf();"/><br/><br/>
+			<input type="button" class="clear" value="Clear" onclick="clr();" />
+			<input type="button" class="clear" value="Submit" onclick="setr();process();" />
+		</div>
+		<script src="js/myjs.js">
+			
+		</script>
+	</body>
+</html>
